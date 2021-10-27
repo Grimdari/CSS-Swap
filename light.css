@@ -1,0 +1,16 @@
+:root {
+  --bg-color: #FFF000;
+}
+
+[data-theme="light"] {
+  --bg-color: #FFFFFF;
+}
+
+html,
+
+body {
+  color: var(--font-color);
+  background-color: var(--bg-color);
+  transition: background-image 0.2s ease;
+  display: flex;
+}
