@@ -2,7 +2,7 @@
     --bg-color: #000;
 }
 
-[data-theme="dark"] {
+[data-theme="light"] {
     --bg-color: #FFA000;
 }
 
