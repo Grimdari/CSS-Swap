@@ -4,17 +4,20 @@ const themeToggle = document.querySelector(
 const currentTheme = localStorage.getItem("theme");
 if (currentTheme) {
     document.documentElement.setAttribute("data-theme", currentTheme);
-    if (currentTheme === "light") {
+    if (currentTheme === "dark") {
         themeToggle.checked = true;
     }
+} else {
+    themeToggle.checked = true;
 }
 
 function switchTheme(e) {
     if (e.target.checked) {
-        document.documentElement.setAttribute("data-theme", "light");
+
+        document.documentElement.setAttribute("data-theme", "dark");
         localStorage.setItem("theme", "dark");
     } else {
-        document.documentElement.setAttribute("data-theme", "dark");
+        document.documentElement.setAttribute("data-theme", "light");
         localStorage.setItem("theme", "light");
     }
 }
